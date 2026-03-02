@@ -26,5 +26,12 @@ jobs:
       - name: Build
         run: dotnet build --no-restore --configuration Release
 
-      - name: Test
-        run: dotnet test --no-build --configuration Release --verbosity minimal
+      - name: Test with coverage
+        run: >-
+          dotnet test --no-build --configuration Release --verbosity minimal
+          /p:CollectCoverage=true
+          /p:Threshold=90
+          /p:ThresholdType=branch
+          /p:ThresholdStat=total
+          /p:CoverletOutputFormat=cobertura
+          /p:SkipAutoProps=true
