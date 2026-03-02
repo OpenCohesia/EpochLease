@@ -3,7 +3,7 @@ using Microsoft.Extensions.Options;
 namespace EpochLease.Extensions.Hosting;
 
 /// <summary>
-/// Configuration options for the LeaseExpirationWatcher background service.
+/// Configuration options for the <see cref="LeaseExpirationWatcher{TId,TItem}"/> background service.
 /// </summary>
 public sealed class LeaseExpirationWatcherOptions
 {
