@@ -6,32 +6,9 @@ on:
   pull_request:
     branches: [master]
 
-permissions:
-  contents: read
-
 jobs:
-  build-and-test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v6
-
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v5
-        with:
-          dotnet-version: '10.0.x'
-
-      - name: Restore dependencies
-        run: dotnet restore
-
-      - name: Build
-        run: dotnet build --no-restore --configuration Release
-
-      - name: Test with coverage
-        run: >-
-          dotnet test --no-build --configuration Release --verbosity minimal
-          /p:CollectCoverage=true
-          /p:Threshold=90
-          /p:ThresholdType=branch
-          /p:ThresholdStat=total
-          /p:CoverletOutputFormat=cobertura
-          /p:SkipAutoProps=true
+  ci:
+    uses: OpenCohesia/.github/.github/workflows/dotnet-ci.yml@main
+    with:
+      dotnet-version: '10.0.x'
+      coverage-threshold: 90
