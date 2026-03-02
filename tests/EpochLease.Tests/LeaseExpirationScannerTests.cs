@@ -11,6 +11,34 @@ public class LeaseExpirationScannerTests
     );
 
     [Fact]
+    public void Constructor_WithNullStore_Throws()
+    {
+        var handler = new Mock<ILeaseExpirationHandler<Guid, TestWorkItem>>();
+
+        Assert.Throws<ArgumentNullException>(() =>
+            new LeaseExpirationScanner<Guid, TestWorkItem>(null!, handler.Object, _timeProvider));
+    }
+
+    [Fact]
+    public void Constructor_WithNullHandler_Throws()
+    {
+        var store = new Mock<ILeaseStore<Guid, TestWorkItem>>();
+
+        Assert.Throws<ArgumentNullException>(() =>
+            new LeaseExpirationScanner<Guid, TestWorkItem>(store.Object, null!, _timeProvider));
+    }
+
+    [Fact]
+    public void Constructor_WithNullTimeProvider_Throws()
+    {
+        var store = new Mock<ILeaseStore<Guid, TestWorkItem>>();
+        var handler = new Mock<ILeaseExpirationHandler<Guid, TestWorkItem>>();
+
+        Assert.Throws<ArgumentNullException>(() =>
+            new LeaseExpirationScanner<Guid, TestWorkItem>(store.Object, handler.Object, null!));
+    }
+
+    [Fact]
     public async Task Scan_WithExpiredLeases_CallsHandlerForEachExpired()
     {
         var expired1 = CreateItem(

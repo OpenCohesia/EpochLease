@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <IsPackable>false</IsPackable>
+    <Include>[EpochLease]*</Include>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\EpochLease\EpochLease.csproj" />
