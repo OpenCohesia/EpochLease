@@ -1,5 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 using Xunit;
 
 namespace EpochLease.Extensions.Hosting.Tests;
@@ -41,6 +42,28 @@ public class ServiceCollectionExtensionsTests
         var hostedServices = provider.GetServices<IHostedService>();
         Assert.Contains(hostedServices,
             s => s is LeaseExpirationWatcher<Guid, TestWorkItem>);
+    }
+
+    [Fact]
+    public void AddEpochLeaseWatcher_WithConfigure_AppliesConfiguration()
+    {
+        var services = new ServiceCollection();
+        services.AddSingleton(TimeProvider.System);
+        services.AddSingleton<ILeaseStore<Guid, TestWorkItem>>(
+            new InMemoryLeaseStore<Guid, TestWorkItem>());
+        services.AddSingleton<ILeaseExpirationHandler<Guid, TestWorkItem>>(
+            new TestHandler());
+        services.AddLogging();
+
+        var expectedInterval = TimeSpan.FromSeconds(42);
+
+        services.AddEpochLease<Guid, TestWorkItem>();
+        services.AddEpochLeaseWatcher<Guid, TestWorkItem>(
+            opts => opts.ScanInterval = expectedInterval);
+
+        var provider = services.BuildServiceProvider();
+        var options = provider.GetRequiredService<IOptions<LeaseExpirationWatcherOptions>>();
+        Assert.Equal(expectedInterval, options.Value.ScanInterval);
     }
 
     public sealed class TestWorkItem : ILeaseable<Guid>

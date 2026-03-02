@@ -36,6 +36,15 @@ public class LeaseTests
     }
 
     [Fact]
+    public void Renew_WithDefaultExpiresAt_Throws()
+    {
+        var lease = Lease.Create("worker-1", DateTimeOffset.UtcNow.AddMinutes(5));
+
+        Assert.Throws<ArgumentException>(() =>
+            lease.Renew("worker-2", default));
+    }
+
+    [Fact]
     public void Renew_IncrementsEpoch()
     {
         var lease = Lease.Create("worker-1", DateTimeOffset.UtcNow.AddMinutes(5));
