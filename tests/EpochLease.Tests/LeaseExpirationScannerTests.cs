@@ -31,7 +31,7 @@ public class LeaseExpirationScannerTests
         var scanner = new LeaseExpirationScanner<Guid, TestWorkItem>(
             store.Object, handler.Object, _timeProvider);
 
-        var result = await scanner.Scan();
+        var result = await scanner.Scan(TestContext.Current.CancellationToken);
 
         Assert.True(result.IsSuccess);
         handler.Verify(h => h.HandleExpiredLease(expired1, It.IsAny<CancellationToken>()), Times.Once);
@@ -51,7 +51,7 @@ public class LeaseExpirationScannerTests
         var scanner = new LeaseExpirationScanner<Guid, TestWorkItem>(
             store.Object, handler.Object, _timeProvider);
 
-        var result = await scanner.Scan();
+        var result = await scanner.Scan(TestContext.Current.CancellationToken);
 
         Assert.True(result.IsSuccess);
         handler.Verify(
@@ -76,7 +76,7 @@ public class LeaseExpirationScannerTests
         var scanner = new LeaseExpirationScanner<Guid, TestWorkItem>(
             store.Object, handler.Object, _timeProvider);
 
-        var result = await scanner.Scan();
+        var result = await scanner.Scan(TestContext.Current.CancellationToken);
 
         Assert.True(result.IsFailure);
     }
@@ -102,7 +102,7 @@ public class LeaseExpirationScannerTests
         var scanner = new LeaseExpirationScanner<Guid, TestWorkItem>(
             store.Object, handler.Object, _timeProvider);
 
-        var result = await scanner.Scan();
+        var result = await scanner.Scan(TestContext.Current.CancellationToken);
 
         Assert.True(result.IsFailure);
         Assert.Contains(expired2.Id.ToString(), result.Error);
@@ -123,7 +123,7 @@ public class LeaseExpirationScannerTests
         var scanner = new LeaseExpirationScanner<Guid, TestWorkItem>(
             store.Object, handler.Object, _timeProvider);
 
-        var result = await scanner.Scan();
+        var result = await scanner.Scan(TestContext.Current.CancellationToken);
 
         Assert.True(result.IsSuccess);
         handler.Verify(
@@ -139,7 +139,7 @@ public class LeaseExpirationScannerTests
             IsLeaseEligible = isEligible,
         };
 
-    private sealed class TestWorkItem : ILeaseable<Guid>
+    public sealed class TestWorkItem : ILeaseable<Guid>
     {
         public required Guid Id { get; init; }
         public Lease? Lease { get; set; }
