@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>EpochLease</RootNamespace>
+    <PackageId>EpochLease</PackageId>
+    <Description>Lightweight lease-based distributed work coordination with epoch-based optimistic concurrency</Description>
+    <PackageTags>lease;distributed;coordination;concurrency;epoch;work-queue</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="All" />
+  </ItemGroup>
+</Project>
