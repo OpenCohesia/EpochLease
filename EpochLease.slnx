@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/EpochLease.Extensions.Hosting/EpochLease.Extensions.Hosting.csproj" />
+    <Project Path="src/EpochLease/EpochLease.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/EpochLease.Extensions.Hosting.Tests/EpochLease.Extensions.Hosting.Tests.csproj" />
+    <Project Path="tests/EpochLease.Tests/EpochLease.Tests.csproj" />
+  </Folder>
+</Solution>
