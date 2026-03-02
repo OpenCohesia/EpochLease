@@ -4,7 +4,6 @@
     <PackageId>EpochLease.Extensions.Hosting</PackageId>
     <Description>ASP.NET Core / Generic Host integration for EpochLease lease expiration monitoring</Description>
     <PackageTags>lease;distributed;coordination;hosting;backgroundservice</PackageTags>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\EpochLease\EpochLease.csproj" />
@@ -13,5 +12,9 @@
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="All" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="\" />
+    <None Include="../../LICENSE" Pack="true" PackagePath="\" />
   </ItemGroup>
 </Project>

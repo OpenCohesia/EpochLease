@@ -7,5 +7,11 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Authors>OpenCohesia</Authors>
+    <PackageProjectUrl>https://github.com/OpenCohesia/EpochLease</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/OpenCohesia/EpochLease</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 </Project>
