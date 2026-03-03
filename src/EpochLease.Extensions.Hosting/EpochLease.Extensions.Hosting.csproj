@@ -1,7 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <RootNamespace>EpochLease.Extensions.Hosting</RootNamespace>
-    <PackageId>EpochLease.Extensions.Hosting</PackageId>
+    <RootNamespace>OpenCohesia.EpochLease.Extensions.Hosting</RootNamespace>
+    <PackageId>OpenCohesia.EpochLease.Extensions.Hosting</PackageId>
+    <AssemblyName>OpenCohesia.EpochLease.Extensions.Hosting</AssemblyName>
     <Description>ASP.NET Core / Generic Host integration for EpochLease lease expiration monitoring</Description>
     <PackageTags>lease;distributed;coordination;hosting;backgroundservice</PackageTags>
   </PropertyGroup>

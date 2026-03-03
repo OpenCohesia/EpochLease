@@ -1,7 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <RootNamespace>EpochLease</RootNamespace>
-    <PackageId>EpochLease</PackageId>
+    <RootNamespace>OpenCohesia.EpochLease</RootNamespace>
+    <PackageId>OpenCohesia.EpochLease</PackageId>
+    <AssemblyName>OpenCohesia.EpochLease</AssemblyName>
     <Description>Lightweight lease-based distributed work coordination with epoch-based optimistic concurrency</Description>
     <PackageTags>lease;distributed;coordination;concurrency;epoch;work-queue</PackageTags>
   </PropertyGroup>
