@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace EpochLease.Tests;
+namespace OpenCohesia.EpochLease.Tests;
 
 public class LeaseableExtensionsTests
 {

@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <IsPackable>false</IsPackable>
-    <Include>[EpochLease.Extensions.Hosting]*</Include>
+    <Include>[OpenCohesia.EpochLease.Extensions.Hosting]*</Include>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\EpochLease\EpochLease.csproj" />

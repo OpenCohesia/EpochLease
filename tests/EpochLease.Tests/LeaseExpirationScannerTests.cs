@@ -2,7 +2,7 @@ using Microsoft.Extensions.Time.Testing;
 using Moq;
 using Xunit;
 
-namespace EpochLease.Tests;
+namespace OpenCohesia.EpochLease.Tests;
 
 public class LeaseExpirationScannerTests
 {

@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace EpochLease.Extensions.Hosting.Tests;
+namespace OpenCohesia.EpochLease.Extensions.Hosting.Tests;
 
 public class LeaseExpirationWatcherOptionsTests
 {

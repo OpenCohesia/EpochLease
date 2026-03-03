@@ -5,7 +5,7 @@ using Microsoft.Extensions.Time.Testing;
 using Moq;
 using Xunit;
 
-namespace EpochLease.Extensions.Hosting.Tests;
+namespace OpenCohesia.EpochLease.Extensions.Hosting.Tests;
 
 public class LeaseExpirationWatcherTests
 {
