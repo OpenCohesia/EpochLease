@@ -1,36 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="19 19 221 218" width="221" height="218">
   <!-- EpochLease Logo: 8-Segment Clock Circle -->
-  <!-- Canvas: 256x256, center (128,128), outer r=100, inner r=65 -->
+  <!-- Canvas: 256x256, center (128,128), outer r=100 -->
+  <!-- Gaps centered at 0°, 45°, 90°, 135°, 180°, 225°, 270°, 315° (8° wide) -->
 
-  <!-- Segment 1 (regular): -90° to -53° -->
-  <path d="M 128.0 28.0 A 100 100 0 0 1 188.18 48.14"
+  <!-- Segment 7 (regular): -86° to -49° -->
+  <path d="M 134.98 28.24 A 100 100 0 0 1 193.61 52.53"
         fill="none" stroke="#93C5FD" stroke-width="14" stroke-linecap="butt" />
 
-  <!-- Segment 2 (ACTIVE WEDGE): -45° to -8° — filled sector -->
-  <path d="M 203.66 52.34 A 107 107 0 0 1 233.96 113.11 L 192.37 118.95 A 65 65 0 0 0 173.96 82.04 Z"
+  <!-- Segment 8 (ACTIVE WEDGE): -41° to -4° — filled sector -->
+  <path d="M 208.75 57.80 A 107 107 0 0 1 234.74 120.54 L 192.84 123.47 A 65 65 0 0 0 177.06 85.36 Z"
         fill="#2563EB" />
 
-  <!-- Segment 3 (bold): 0° to 37° -->
-  <path d="M 228.0 128.0 A 100 100 0 0 1 207.86 188.18"
+  <!-- Segment 1 (bold): 4° to 41° -->
+  <path d="M 227.76 134.98 A 100 100 0 0 1 203.47 193.61"
         fill="none" stroke="#93C5FD" stroke-width="20" stroke-linecap="butt" />
 
-  <!-- Segment 4 (regular): 45° to 82° -->
-  <path d="M 198.71 198.71 A 100 100 0 0 1 141.92 227.03"
+  <!-- Segment 2 (regular): 49° to 86° -->
+  <path d="M 193.61 203.47 A 100 100 0 0 1 134.98 227.76"
         fill="none" stroke="#93C5FD" stroke-width="14" stroke-linecap="butt" />
 
-  <!-- Segment 5 (regular): 90° to 127° -->
-  <path d="M 128.0 228.0 A 100 100 0 0 1 67.82 207.86"
+  <!-- Segment 3 (regular): 94° to 131° -->
+  <path d="M 121.02 227.76 A 100 100 0 0 1 62.39 203.47"
         fill="none" stroke="#93C5FD" stroke-width="14" stroke-linecap="butt" />
 
-  <!-- Segment 6 (regular): 135° to 172° -->
-  <path d="M 57.29 198.71 A 100 100 0 0 1 28.97 141.92"
+  <!-- Segment 4 (regular): 139° to 176° -->
+  <path d="M 52.53 193.61 A 100 100 0 0 1 28.24 134.98"
         fill="none" stroke="#93C5FD" stroke-width="14" stroke-linecap="butt" />
 
-  <!-- Segment 7 (regular): 180° to 217° -->
-  <path d="M 28.0 128.0 A 100 100 0 0 1 48.14 67.82"
+  <!-- Segment 5 (regular): 184° to 221° -->
+  <path d="M 28.24 121.02 A 100 100 0 0 1 52.53 62.39"
         fill="none" stroke="#93C5FD" stroke-width="14" stroke-linecap="butt" />
 
-  <!-- Segment 8 (regular): 225° to 262° -->
-  <path d="M 57.29 57.29 A 100 100 0 0 1 114.08 28.97"
+  <!-- Segment 6 (regular): 229° to 266° -->
+  <path d="M 62.39 52.53 A 100 100 0 0 1 121.02 28.24"
         fill="none" stroke="#93C5FD" stroke-width="14" stroke-linecap="butt" />
 </svg>
