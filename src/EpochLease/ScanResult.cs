@@ -1,4 +1,4 @@
-namespace EpochLease;
+namespace OpenCohesia.EpochLease;
 
 /// <summary>
 /// Result of a lease expiration scan operation.

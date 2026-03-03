@@ -1,4 +1,4 @@
-namespace EpochLease;
+namespace OpenCohesia.EpochLease;
 
 /// <summary>
 /// Handles expired leases detected by the scanner.

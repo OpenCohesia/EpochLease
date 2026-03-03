@@ -2,7 +2,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Options;
 
-namespace EpochLease.Extensions.Hosting;
+namespace OpenCohesia.EpochLease.Extensions.Hosting;
 
 /// <summary>
 /// Extension methods for registering EpochLease services in the DI container.

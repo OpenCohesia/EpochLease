@@ -1,4 +1,4 @@
-namespace EpochLease;
+namespace OpenCohesia.EpochLease;
 
 /// <summary>
 /// Extension methods for <see cref="ILeaseable{TId}"/>.

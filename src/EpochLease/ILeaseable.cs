@@ -1,4 +1,4 @@
-namespace EpochLease;
+namespace OpenCohesia.EpochLease;
 
 /// <summary>
 /// Represents a work item that can be leased by a worker.

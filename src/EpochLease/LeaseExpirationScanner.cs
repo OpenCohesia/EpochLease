@@ -1,4 +1,4 @@
-namespace EpochLease;
+namespace OpenCohesia.EpochLease;
 
 /// <summary>
 /// Scans for expired leases and invokes the handler to reset them.

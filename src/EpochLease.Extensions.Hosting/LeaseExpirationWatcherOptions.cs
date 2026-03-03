@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Options;
 
-namespace EpochLease.Extensions.Hosting;
+namespace OpenCohesia.EpochLease.Extensions.Hosting;
 
 /// <summary>
 /// Configuration options for the <see cref="LeaseExpirationWatcher{TId,TItem}"/> background service.

@@ -2,7 +2,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace EpochLease.Extensions.Hosting;
+namespace OpenCohesia.EpochLease.Extensions.Hosting;
 
 /// <summary>
 /// Background service that periodically scans for expired leases and resets them.

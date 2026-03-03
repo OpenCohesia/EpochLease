@@ -1,6 +1,6 @@
 using System.Collections.Concurrent;
 
-namespace EpochLease;
+namespace OpenCohesia.EpochLease;
 
 /// <summary>
 /// Thread-safe in-memory implementation of <see cref="ILeaseStore{TId,TItem}"/>.
