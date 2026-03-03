@@ -1,4 +1,4 @@
-<h1><img src="assets/logo.svg" alt="EpochLease logo" width="36" height="36" align="center">&nbsp;EpochLease</h1>
+# <img src="assets/logo.svg" height="30px"> EpochLease
 
 [![Build and Test](https://github.com/OpenCohesia/EpochLease/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/OpenCohesia/EpochLease/actions/workflows/build-and-test.yml)
 [![NuGet](https://img.shields.io/nuget/v/EpochLease.svg)](https://www.nuget.org/packages/EpochLease)
