@@ -86,6 +86,13 @@ The existing release-triggered workflow is removed and replaced by the two new m
 2. Merge PR to main
 3. Trigger "Publish Hosting" workflow
 
+### Documentation
+
+Add a "Publishing Packages" section to `CONTRIBUTING.md` documenting:
+- The two workflows and when to use each
+- The version bump process (which csproj files to update for each scenario)
+- The release checklist for both scenarios
+
 ## Files Changed
 
 | File | Change |
@@ -97,3 +104,4 @@ The existing release-triggered workflow is removed and replaced by the two new m
 | `.github/workflows/publish.yml` | Remove |
 | `.github/workflows/publish-core.yml` | New — publishes both packages |
 | `.github/workflows/publish-hosting.yml` | New — publishes hosting only |
+| `CONTRIBUTING.md` | Add "Publishing Packages" section |
