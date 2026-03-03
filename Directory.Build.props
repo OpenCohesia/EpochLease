@@ -13,5 +13,6 @@
     <RepositoryType>git</RepositoryType>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>logo-256.png</PackageIcon>
   </PropertyGroup>
 </Project>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- EpochLease Logo: Segmented Clock Arc -->
+  <!-- 5 arc segments on a circle (cx=128, cy=128, r=100) -->
+  <!-- Each arc spans 66 degrees with 6-degree gaps -->
+
+  <!-- Segment 1 (ACTIVE): -87deg to -21deg (~12 to ~2 o'clock) -->
+  <path d="M 133.2336 28.1370 A 100 100 0 0 1 221.3580 92.1632"
+        fill="none" stroke="#2563EB" stroke-width="16" stroke-linecap="round" />
+
+  <!-- Segment 2: -15deg to +51deg (~2 to ~4 o'clock) -->
+  <path d="M 224.5926 102.1181 A 100 100 0 0 1 190.9320 205.7146"
+        fill="none" stroke="#93C5FD" stroke-width="6" stroke-linecap="round" />
+
+  <!-- Segment 3: +57deg to +123deg (~4 to ~7 o'clock) -->
+  <path d="M 182.4639 211.8671 A 100 100 0 0 1 73.5361 211.8671"
+        fill="none" stroke="#93C5FD" stroke-width="6" stroke-linecap="round" />
+
+  <!-- Segment 4: +129deg to +195deg (~7 to ~9 o'clock) -->
+  <path d="M 65.0680 205.7146 A 100 100 0 0 1 31.4074 102.1181"
+        fill="none" stroke="#93C5FD" stroke-width="6" stroke-linecap="round" />
+
+  <!-- Segment 5: +201deg to +267deg (~9 to ~12 o'clock) -->
+  <path d="M 34.6420 92.1632 A 100 100 0 0 1 122.7664 28.1370"
+        fill="none" stroke="#93C5FD" stroke-width="6" stroke-linecap="round" />
+</svg>

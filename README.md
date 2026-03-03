@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.svg" alt="EpochLease logo" width="128" height="128">
+</p>
+
 # EpochLease
 
 [![Build and Test](https://github.com/OpenCohesia/EpochLease/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/OpenCohesia/EpochLease/actions/workflows/build-and-test.yml)
