@@ -1,5 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+    <Version>0.1.0</Version>
+    <IsPackable>true</IsPackable>
     <RootNamespace>OpenCohesia.EpochLease.Extensions.Hosting</RootNamespace>
     <PackageId>OpenCohesia.EpochLease.Extensions.Hosting</PackageId>
     <AssemblyName>OpenCohesia.EpochLease.Extensions.Hosting</AssemblyName>

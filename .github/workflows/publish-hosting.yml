@@ -1,8 +1,7 @@
-name: Publish to NuGet
+name: Publish Hosting
 
 on:
-  release:
-    types: [published]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -23,13 +22,13 @@ jobs:
         run: dotnet restore
 
       - name: Build
-        run: dotnet build --no-restore --configuration Release
+        run: dotnet build --no-restore -c Release
 
       - name: Test
-        run: dotnet test --no-build --configuration Release --verbosity minimal
+        run: dotnet test --no-build -c Release --verbosity minimal
 
-      - name: Pack
-        run: dotnet pack --no-build --configuration Release --output ./nupkgs
+      - name: Pack Hosting
+        run: dotnet pack src/EpochLease.Extensions.Hosting/EpochLease.Extensions.Hosting.csproj --no-build -c Release -o ./nupkgs
 
       - name: Publish to NuGet
         run: dotnet nuget push ./nupkgs/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate

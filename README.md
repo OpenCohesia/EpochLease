@@ -1,7 +1,7 @@
 # <img src="assets/logo.svg" height="30px"> EpochLease
 
 [![Build and Test](https://github.com/OpenCohesia/EpochLease/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/OpenCohesia/EpochLease/actions/workflows/build-and-test.yml)
-[![NuGet](https://img.shields.io/nuget/v/EpochLease.svg)](https://www.nuget.org/packages/EpochLease)
+[![NuGet](https://img.shields.io/nuget/v/OpenCohesia.EpochLease.svg)](https://www.nuget.org/packages/OpenCohesia.EpochLease)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Lightweight lease-based distributed work coordination with epoch-based optimistic concurrency for .NET.
@@ -21,8 +21,8 @@ Common scenarios:
 Install the packages:
 
 ```bash
-dotnet add package EpochLease
-dotnet add package EpochLease.Extensions.Hosting
+dotnet add package OpenCohesia.EpochLease
+dotnet add package OpenCohesia.EpochLease.Extensions.Hosting
 ```
 
 ### 1. Define your work item
